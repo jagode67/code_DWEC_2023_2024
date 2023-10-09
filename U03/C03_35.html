@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C03_20</title>
+</head>
+
+<body>
+    <script>
+
+        const text = "Lara, María y Carlos se van al cine";
+
+        // Reemplazar la primera ocurrencia
+        console.log(text.replace("r", "m"));                     // "Lama, María y Carlos se van al cine"
+        console.log(text.replace("r", "m").replace("a", "e"));   // "Lema, María y Carlos se van al cine"
+
+        // Reemplazar todas las ocurrencias
+        console.log(text.replaceAll("a", "e"));                  // "Lere, Meríe y Cerlos se ven el cine"
+        console.log(text.replace(/e/g, "i"));                    // "Lara, María y Carlos si van al cini"
+
+
+    </script>
+</body>
+
+</html>

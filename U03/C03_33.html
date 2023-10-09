@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C03_20</title>
+</head>
+
+<body>
+    <script>
+
+        const texto = "Javi";
+
+        console.log(texto.startsWith("J"));     // true  ('Javi' empieza por 'J')
+        console.log(texto.startsWith("a", 1));  // true  ('avi' empieza por 'a')
+        console.log(texto.endsWith("v"));       // false ('Javi' no acaba en 'v')
+        console.log(texto.endsWith("v", 3));    // true  ('Jav' acaba en 'v')
+        console.log(texto.includes("vi"));      // true  ('Javi' incluye 'vi')
+        console.log(texto.includes("J", 1));    // false ('avi' no incluye 'J')
+
+    </script>
+</body>
+
+</html>
