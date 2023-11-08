@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const fruits = ['manzana', 'plátano', 'naranja', 'kiwi'];
+
+        // Agregar elementos en el índice 2
+        fruits.splice(2, 0, 'pera', 'mango');
+        console.log(fruits); // ['manzana', 'plátano', 'pera', 'mango', 'naranja', 'kiwi']
+
+        // Eliminar los elementos desde el índice 1 hasta el índice 2
+        const deletedFruits = fruits.splice(1, 2);
+        console.log(fruits); // ['manzana', 'mango', 'naranja', 'kiwi']
+        console.log(deletedFruits); // ['plátano', 'pera']
+
+        // Reemplazar el elemento en el índice 0 por "fresa"
+        fruits.splice(0, 1, 'fresa');
+        console.log(fruits); // ['fresa', 'mango', 'naranja', 'kiwi']
+
+    </script>
+</body>
+
+</html>

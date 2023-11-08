@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="id"></div>
+  <script type="module">
+    class Persona {
+      nombre;               // Propiedad sin definir (undefined)
+      mote = "Charly";      // Propiedad definida
+      peso = 90;            // Propiedad definida con 60 kilos
+      estatura = 190;       // Propiedad definida con 190 cm
+
+      constructor(nombre) {
+        this.nombre = nombre;  // Modificamos el valor de la propiedad name
+        console.log(`¡Hola, ${this.nombre}!`);  // Accedemos al valor actual de la propiedad name
+      }
+    }
+
+    const c = new Persona("Carlos");   // '¡Hola, Carlos!'
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Persona {
+      static num = 0;
+      static getPersonas(){
+        return Persona.num
+      }
+
+      nombre=""
+
+      constructor(n) {
+        Persona.num++
+        this.nombre=n
+      }
+    }
+    a = new Persona("Javi");
+    console.log(`${a.nombre} es la persona ${Persona.getPersonas()}`); 
+    b = new Persona("Carlos");
+    console.log(`${b.nombre} es la persona ${Persona.getPersonas()}`); 
+  </script>
+</body>
+
+</html>

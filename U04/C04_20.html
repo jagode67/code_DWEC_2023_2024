@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const fruits = ['manzana', 'plátano', 'naranja', 'kiwi', 'mango'];
+
+        // Llenar el array con el valor "fruta"
+        fruits.fill('fruta');
+        console.log(fruits); // ['fruta', 'fruta', 'fruta', 'fruta', 'fruta']
+
+        // Llenar los elementos desde el índice 1 hasta el índice 3 con el valor "fruta"
+        fruits.fill('fruta', 1, 4);
+        console.log(fruits); // ['manzana', 'fruta', 'fruta', 'fruta', 'mango']
+
+    </script>
+</body>
+
+</html>

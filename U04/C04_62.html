@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nombre = "Javi";  // variable global
+        var gatos = "Conie, Sam y Noche"; // variable global
+
+        function demo() {
+            var nombre = "Ana"; // variable local
+            document.write("<br/>" + gatos + " no son de " + nombre + ".");
+        }
+        // Llamamos a la función para que use las variables locales.
+
+        demo();
+
+        // Utilizamos las variables globales definidas al comienzo.
+        document.write("<br/>" + gatos + " son de " + nombre + ".");
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Coche(marca, combustible) {
+            // Propiedades
+            this.marca = marca;
+            this.combustible = combustible;
+            this.cantidad = 0; // Litros de combustible que tiene el coche. 
+            this.ponerGasolina = ponerGasolina
+        }
+
+        function ponerGasolina(litros) {
+            // Cambia la propiedad cantidad
+            this.cantidad = litros;
+        }
+
+
+        var cocheDeJavi = new Coche("Volkswagen Golf", "gasolina");
+        var cocheDeLara = new Coche("Mercedes SLK", "diesel");
+
+        cocheDeJavi.ponerGasolina(35);
+        document.write("<br/>El coche de Javi tiene " + cocheDeJavi.cantidad + " litros de " + cocheDeJavi.combustible + " en el depósito.");
+        // Imprimirá
+        // El coche de Javi tiene 35 litros de diesel en el depósito. 
+
+
+
+
+
+    </script>
+</body>
+
+</html>
