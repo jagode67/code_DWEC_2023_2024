@@ -1,0 +1,23 @@
+<html>
+
+
+
+<body>
+  <script>
+    function valida() {
+      valor = document.getElementById("campo").value;
+      if (isNaN(valor)) {
+        alert("campo incorrecto");
+        return false;
+      }
+    }
+
+  </script>
+  <form action="" method="" id="" name="" onsubmit="return valida()">
+    <input type="text" id="campo" />
+    <input type="submit" value="Submit" />
+  </form>
+
+</body>
+
+</html>

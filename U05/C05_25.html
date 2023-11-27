@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_25</title>
+</head>
+
+<body>
+  <form id ="formulario" action="https://javigomez.org">
+    <input type="text" name="" id="tercero" value ="xxx">
+    <input type="text" name="" id="primero">
+    <input type="text" name="" id="segundo">
+    <button onclick="this.disabled=true;this.innerHTML='Enviando...';this.form.submit();">foco</button>
+  </form>
+
+
+
+
+  <script>
+    function foco(){
+    if (document.forms.length > 0) {
+      for (var i = 0; i < document.forms[0].elements.length; i++) {
+        var campo = document.forms[0].elements[i];
+        if (campo.type !== "hidden") {
+          campo.focus();
+          break;
+        }
+      }
+    }
+  }
+  </script>
+
+
+</body>
+
+</html>

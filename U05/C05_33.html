@@ -1,0 +1,25 @@
+<html>
+
+
+
+<body>
+  <script>
+    function valida() {
+      valor = document.getElementById("campo").value;
+      if (!(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(valor))) {
+        alert("ERROR")
+        return false;
+      }
+
+
+    }
+
+  </script>
+  <input type="text" name="" id="campo">
+
+  <button id="btn" onclick="valida()">validar</button>
+
+
+</body>
+
+</html>
