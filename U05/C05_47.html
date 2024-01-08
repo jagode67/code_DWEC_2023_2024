@@ -1,0 +1,32 @@
+<html>
+
+
+
+<body>
+
+
+
+    <script>
+
+        let regexp = /^mas...on$/i;     // Debe empezar por "mas"
+        console.log(regexp.test("mastodon"));      // false  (contiene "mas", pero no empieza por "mas")
+        console.log(regexp.test("Master"));      // true (empieza por "mas" y tiene el flag «i»)
+
+        regexp = /do$/i;      // Debe terminar por "do"
+        console.log(regexp.test("Vívido"));      // true
+        console.log(regexp.test("Dominó"));      // false (contiene "do" pero no acaba por "do")
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+
+
+<body>
+
+
+
+    <script>
+
+        function leerCookie(nombre) {
+            a = document.cookie.substring(document.cookie.indexOf(nombre + '=') + nombre.length + 1, document.cookie.length);
+            if (a.indexOf(';') != -1)
+                a = a.substring(0, a.indexOf(";"))
+            return a;
+        }
+
+        alert(leerCookie('nombre'));
+        alert(leerCookie('coche'));
+        document.cookie="coche=BMW; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>

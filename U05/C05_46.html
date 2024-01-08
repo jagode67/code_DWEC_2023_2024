@@ -1,0 +1,30 @@
+<html>
+
+
+
+<body>
+
+
+
+    <script>
+
+        regexp = /casa|cama/;   // RegExp que acepta "casa" o "cama"
+        console.log(regexp.test("la cama verde")); //true
+
+        regexp = /cas(i|o)ta/;  // RegExp que acepta "casita" o "casota"
+        console.log(regexp.test("casita"));        // true
+        console.log(regexp.test("caseta"));        // false
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>

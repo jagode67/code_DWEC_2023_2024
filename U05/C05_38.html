@@ -1,0 +1,44 @@
+<html>
+
+
+
+<body>
+
+  <div id="radios">
+    <input type="radio" name="grupo">uno</input>
+    <input type="radio" name="grupo">dos</input>
+    <input type="radio" name="grupo">tres</input>
+    </div>
+    <div id="resultado"></div>
+
+    <script>
+      valida()
+
+      document.querySelector("#radios").addEventListener("click",valida);
+
+      function valida(){
+        document.querySelector("#resultado").innerHTML=validaChk();
+      }
+
+      function validaChk(){
+        var radios=document.getElementsByName("grupo");
+        chk=false;
+        for (var i=0; i<radios.length;i++){
+          if (radios[i].checked){
+            chk=true;
+          }
+        }
+        return chk;
+      }
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+
+
+
+<body>
+  <script>
+
+    console.log(validaFecha("28-07-2023"));
+
+    console.log(validaFecha("30-02-2023"));
+
+
+
+    function validaFecha(fecha) {
+
+      //dd-mm-yyyy
+
+      var partes = fecha.split("-");
+      var yy = parseInt(partes[2]);
+      var mm = parseInt(partes[1]);
+      var dd = parseInt(partes[0]);
+
+  //    console.log(yy);
+ //     console.log(mm);
+  //    console.log(dd);
+
+      fechaCompleta = new Date(yy, mm-1, dd);
+
+
+   //   console.log("FECHA" + fechaCompleta);
+     // console.log("MES" + fechaCompleta.getMonth());
+
+      valida = true;
+      if (fechaCompleta.getFullYear() != yy)
+        valida = false;
+
+      if (fechaCompleta.getMonth()+1 != mm)
+        valida = false;
+
+      if (fechaCompleta.getDate() != dd)
+        valida = false;
+
+      return valida;
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>

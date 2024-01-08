@@ -1,0 +1,43 @@
+<html>
+
+
+
+<body>
+
+  <div id="checks">
+    <input type="checkbox" name="grupo">uno</input>
+    <input type="checkbox" name="grupo">dos</input>
+    <input type="checkbox" name="grupo">tres</input>
+    </div>
+    <div id="resultado"></div>
+
+    <script>
+
+      document.querySelector("#checks").addEventListener("click",valida);
+
+      function valida(){
+        document.querySelector("#resultado").innerHTML=validaChk();
+      }
+
+      function validaChk(){
+        var checkboxes=document.getElementsByName("grupo");
+        chk=false;
+        for (var i=0; i<checkboxes.length;i++){
+          if (checkboxes[i].checked){
+            chk=true;
+          }
+        }
+        return chk;
+      }
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>

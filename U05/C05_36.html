@@ -1,0 +1,34 @@
+<html>
+
+
+
+<body>
+  <script>
+
+    function validaTlf() {
+      var res = document.getElementById("res");
+      res.innerHTML = valida();
+    }
+
+    function valida() {
+
+      var ret = true;
+
+      valor = document.getElementById("campo").value;
+      if (!(/^\d{9}$/.test(valor))) {
+        ret = false;
+      }
+
+      return ret;
+    }
+  </script>
+
+
+
+</body>
+
+<input type="text" id="campo">
+<button onclick="validaTlf()">validar</button>
+<div id="res"></div>
+
+</html>

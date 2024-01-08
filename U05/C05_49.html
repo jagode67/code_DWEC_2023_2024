@@ -1,0 +1,27 @@
+<html>
+
+
+
+<body>
+
+
+
+    <script>
+
+        let regexp = /^C*on$/; // 'a' tiene que estar 1 o más veces (es como la expresión /aa*/)
+
+        console.log(regexp.test("Camion"));     // false ('a' aparece 0 veces)
+        console.log(regexp.test("aa"));   // true ('a' aparece 2 veces)
+        console.log(regexp.test("bbb"));  // false ('a' aparece 0 veces)
+
+
+
+    </script>
+
+
+
+</body>
+
+
+
+</html>
