@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,29 @@
 
     </style>
 </head>
+
 <body>
-    <div>uno</div>
+
+<div>uno</div>
+<div>dos</div>
+<div>tres</div>
+    <button onclick="borrar()">borrar</button>
+
     <script>
-        var dos=document.querySelector("div");
-        dos.textContent="Hola"
-        console.log(dos.outerHTML)
+
+        function borrar(){
+
+            div=document.querySelector("div:nth-child(2)")
+            div.parentNode.removeChild(div)
+        }
+
+        
+
+
+
+
+
+
     </script>
 </body>
 

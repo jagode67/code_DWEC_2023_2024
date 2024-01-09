@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,26 @@
 
     </style>
 </head>
+
 <body>
-    <div>uno</div>
+
+<div id="container">
+    <p>texto</p>
+</div>
+
     <script>
-        var dos=document.querySelector("div");
-        dos.textContent="Hola"
-        console.log(dos.outerHTML)
+var container = document.getElementById("container");
+var p=document.querySelector("p");
+
+var nuevoDIV=document.createElement("div");
+nuevoDIV.textContent="NUEVO";
+
+container.insertBefore(nuevoDIV,p);
+
+
+
+
+
     </script>
 </body>
 

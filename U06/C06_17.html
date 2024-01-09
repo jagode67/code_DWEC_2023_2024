@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,19 @@
 
     </style>
 </head>
+
 <body>
-    <div>uno</div>
+    <div id="dato"></div>
     <script>
-        var dos=document.querySelector("div");
-        dos.textContent="Hola"
-        console.log(dos.outerHTML)
+        div=document.getElementById("dato");
+ const imagen = document.createElement("img");
+ imagen.src="https://javigomez.org/ESIC/logan.jpeg"
+ imagen.alt="lobezno"
+
+document.body.appendChild(imagen)
+
+
+
     </script>
 </body>
 

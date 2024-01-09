@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,22 @@
 
     </style>
 </head>
+
 <body>
-    <div>uno</div>
+
     <script>
-        var dos=document.querySelector("div");
-        dos.textContent="Hola"
-        console.log(dos.outerHTML)
+
+divInterno=document.createElement("div");
+divInterno.textContent="DIV INTERNO"
+
+divExterno=document.createElement("div");
+divExterno.id="app";
+
+divExterno.appendChild(divInterno);
+
+document.body.appendChild(divExterno);
+
+
     </script>
 </body>
 
