@@ -21,9 +21,10 @@
     <script>
 
         function borrar(){
-
             div=document.querySelector("div:nth-child(2)")
-            div.parentNode.removeChild(div)
+            div2=document.createElement("div")
+            div2.textContent="XXXXXX"
+            div.parentNode.replaceChild(div2,div)
         }
 
         

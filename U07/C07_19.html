@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        function test(file) {
+            var archivo = new XMLHttpRequest();
+
+            archivo.open("GET", file, false);
+            archivo.onreadystatechange = function () {
+                if (archivo.readyState == 4) {
+                    if (archivo.status == 200 || archivo.status == 0) {
+                        var Texto = archivo.responseText;
+                        console.log("Contenido: \n" + Texto);
+                    }
+                }
+            }
+            archivo.send(null);
+        }
+        test('./info.txt')
+        console.log("XXXXXXXXXXX")
+        
+
+
+    </script>
+</body>
+
+</html>

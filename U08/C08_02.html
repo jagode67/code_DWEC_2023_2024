@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="grabar()">grabar</button>
+    <button onclick="leer()">leer</button>
+    <button onclick="BorrarN()">borrar Nombre</button>
+    <button onclick="BorrarT()">Borrar todo</button>
+
+
+<script>
+
+    function BorrarT(){
+        sessionStorage.clear();
+    }
+
+    function BorrarN(){
+        sessionStorage.removeItem("nombre")
+
+    }
+
+    function grabar(){
+        sessionStorage.setItem("nombre","Carlos");
+        sessionStorage.setItem("edad",23);
+    }
+
+    function leer(){
+        var nom=sessionStorage.getItem("nombre");
+        var ed=sessionStorage.getItem("edad");
+
+        console.log(`nombre ${nom} edad ${ed}`)
+    }
+</script>
+</body>
+</html>

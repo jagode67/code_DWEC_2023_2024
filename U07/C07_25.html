@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        const leerDatos = async () => {
+            try {
+                const response = await fetch('./info.txt');
+                if (!response.ok) {
+                    throw new Error('Error en la petición');
+                }
+                const data = await response.text();
+                console.log(data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        leerDatos();
+        console.log("Despues");
+
+
+
+    </script>
+</body>
+
+</html>

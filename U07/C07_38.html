@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        const jsonText = '[{"nombre":"Lara", "edad": 25, "ciudad":"Madrid"},{"nombre":"Carlos", "edad": 33, "ciudad":"Madrid"},{"nombre":"Maria", "edad": 18, "ciudad":"Madrid"}]';
+
+        const objJson = JSON.parse(jsonText);
+
+        console.log(objJson);
+
+        for (persona of objJson){
+            console.log (persona.nombre);
+            console.log (persona.edad);
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
