@@ -6,34 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="grabar()">grabar</button>
-    <button onclick="leer()">leer</button>
-    <button onclick="BorrarN()">borrar Nombre</button>
-    <button onclick="BorrarT()">Borrar todo</button>
-
-
-<script>
-
-    function BorrarT(){
-        localStorage.clear();
-    }
-
-    function BorrarN(){
-        localStorage.removeItem("nombre")
-
-    }
-
-    function grabar(){
-        localStorage.setItem("nombre","Carlos");
-        localStorage.setItem("edad",23);
-    }
-
-    function leer(){
-        var nom=localStorage.getItem("nombre");
-        var ed=localStorage.getItem("edad");
-
-        console.log(`nombre ${nom} edad ${ed}`)
-    }
-</script>
+    <video id="peli" muted controls src="https://javigomez.org/ESIC/multi/canguros.mp4"> 
+        <track src="A000_es.vtt" srclang="es" label="Español" default>
+        <track src="A000_en.vtt" srclang="en" label="Inglés" default>
+    </video>
+<div>
+    <button onclick="window.peli.play()">Reproducir</button>
+    <button onclick="window.peli.pause()">Parar</button>
+    <button onclick="window.peli.currentTime+=5">Avanzar</button>
+    <button onclick="window.peli.currentTime-=5">Retroceder</button>
+    <label>Momento:
+        <input type="text" id="momento">
+    </label>
+    <button onclick="window.peli.currentTime=window.momento.value">ir</button>
+</div>
 </body>
 </html>
